@@ -1,3 +1,4 @@
+import os
 import random
 from time import sleep
 from cgol.board import Board
@@ -18,6 +19,7 @@ history = []
 
 while running:
     sleep(0.2)
+    os.system("cls")
     gen += 1
     print(board)
     next_board = board.get_next_generation()
